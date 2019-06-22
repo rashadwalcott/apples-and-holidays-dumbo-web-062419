@@ -101,16 +101,7 @@ end
 holiday_hash
 end
 
-  array = []
-  holiday_hash.each do |season, holiday|
-    holiday.each do |name,supply|
-      if supply == "BBQ"
-      array << holiday.keys
-      end
-    end
-  end
-  array
-end
+ 
 
 
 
