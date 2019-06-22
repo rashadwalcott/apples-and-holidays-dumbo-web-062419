@@ -80,7 +80,8 @@ def all_supplies_in_holidays(holiday_hash)
     string += " #{name}:"
     puts string.split(' ').map(&:capitalize).join(' ')
     supply.each do |value|
-      string += puts string.split(' ').map(&:capitalize).join(' ')
+      string += "#{value}"
+       puts string.split(' ').map(&:capitalize).join(' ')
     end
   end
 end
