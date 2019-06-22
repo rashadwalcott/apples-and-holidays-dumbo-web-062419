@@ -91,7 +91,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   array = []
   holiday_hash.each do |season, holiday|
-    season.each do |name,supply|
+    holiday.each do |name,supply|
       if supply == "BBQ"
       array << name.keys
       end
