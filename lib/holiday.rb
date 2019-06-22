@@ -74,15 +74,14 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   string = ' '
   holiday_hash.each do |season,holiday|
-  string += "#{season}: "
+  string = "#{season}: "
   puts string.split(' ').map(&:capitalize).join(' ')
+  
   holiday.each do |name,supply|
-    string += " #{name}:"
-    puts string.split(' ').map(&:capitalize).join(' ')
-    supply.each do |value|
-      string += "#{value}"
-       puts string.split(' ').map(&:capitalize).join(' ')
-    end
+    string = "#{name.to_s.split('_').map(&:capitalize).join(' ')}:"
+    puts "  #{string} #{supply.join(', ') }"
+    
+    
   end
 end
 end
